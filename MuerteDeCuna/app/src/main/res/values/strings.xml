@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Sabby Tracker</string>
+    <string name="log_in_email">Correo</string>
+    <string name="log_in_password">Contraseña</string>
+    <string name="activity_Dota_Profile">Misaki Taro</string>
+    <string name="activity_Dota_Level">Level:</string>
+    <string name="activity_Dota_LastMatch">Last Match</string>
+    <string name="activity_Dota_LastMatch_Hero">Earthshaker</string>
+    <string name="activity_Dota_LastMatch_kd">7/0/15</string>
+    <string name="activity_Dota_Total_Matches">Total Matches</string>
+    <string name="activity_Dota_Level_Number">200</string>
+    <string name="activity_Dota_MatchHistory">Match History</string>
+    <string name="activity_Dota_MatchHistory_lastMatches">Last 50 Matches</string>
+    <string name="activity_Dota_MatchHistory_Radiant">Radiant</string>
+    <string name="activity_Dota_MatchHistory_Dire">Dire</string>
+    <string name="activity_Dota_MatchHistory_id1">1234567890</string>
+    <string name="activity_Dota_MatchHistory_id2">9876543210</string>
+    <string name="activity_Dota_MatchHistory_id3">1020304050</string>
+    <string name="activity_Dota_MatchHistory_id4">5060708090</string>
+    <string name="activity_Dota_ProTeams_Title">DotA 2 Pro Teams</string>
+    <string name="activity_Lol_ProTeams_Title">League of Legends Pro Teams</string>
+    <string name="activity_Lol_Home_flexQueue">Flex Queue</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <array name="activity_dota_matchHistory_array">
+        <item>match 1</item>
+        <item>match 2</item>
+        <item>match 3</item>
+        <item>match 4</item>
+    </array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

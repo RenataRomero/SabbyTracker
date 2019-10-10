@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityLogin"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8">
+
+        <ImageView
+            android:id="@+id/activity_login_lotalogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_log_in_email"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            />
+
+        <EditText
+            android:id="@+id/activity_log_in_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#11000000"
+            android:hint="Email"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/activity_log_in_pass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_log_in_email"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="38dp"
+            android:hint="@string/log_in_password"
+            android:textColorHint="#FFFFFF"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/activity_login_logIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/activity_log_in_pass"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="40dp"
+            app:cardElevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/activity_log_in_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar Sesion"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/activity_login_logIn2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/activity_login_logIn"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/activity_log_in_textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrarse"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>
