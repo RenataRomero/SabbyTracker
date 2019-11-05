@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ActivityLogin"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     >
 
     <RelativeLayout
@@ -33,7 +33,7 @@
             android:hint="Email"
             android:textColorHint="#FFFFFF"
             android:textSize="16dp"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorLightPurple"/>
 
         <EditText
             android:id="@+id/activity_log_in_pass"
@@ -45,7 +45,7 @@
             android:hint="@string/log_in_password"
             android:textColorHint="#FFFFFF"
             android:inputType="textPassword"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorLightPurple"
             />
 
         <androidx.cardview.widget.CardView

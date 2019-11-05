@@ -41,11 +41,14 @@ public class ActivityLogin extends AppCompatActivity {
         pwd = findViewById(R.id.activity_log_in_pass);
         card = findViewById(R.id.activity_login_logIn);
 
-        /*card.setOnClickListener(new View.OnClickListener() {
+        email.setHintTextColor(getResources().getColor(R.color.colorGreen));
+        pwd.setHintTextColor(getResources().getColor(R.color.colorGreen));
+
+        card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (email.getText().toString().equals("") || pwd.getText().toString().equals("") ) {
-                    Toast warning = Toast.makeText(ActivityLogin.this, "Ni email ni Password pueden ser vacíos!",
+                    Toast warning = Toast.makeText(ActivityLogin.this, "Ni email, ni Password pueden ser vacíos!",
                             Toast.LENGTH_SHORT);
                     warning.show();
                 } else {
@@ -56,7 +59,7 @@ public class ActivityLogin extends AppCompatActivity {
                     finish();
                 }
             }
-        });*/
+        });
 
     }
 

@@ -6,14 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorWhite"
     tools:context=".ActivitySplashScreen">
 
+    <ImageView
+        android:layout_width="@dimen/metrics_txt_img_width"
+        android:layout_height="@dimen/metrics_txt_img_width"
+        android:background="@drawable/maternity"/>
     <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Sabby Tracker"
-        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:text="Bienvenido a Sabby Tracker"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         />
 

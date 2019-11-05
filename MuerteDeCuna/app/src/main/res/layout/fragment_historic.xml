@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHistoric">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/historic_title_top_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/historic_txt_table_title"
+                android:id="@+id/historic_txt_title"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/historic_btns_layout"
+                android:layout_below="@id/historic_txt_title"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+                
+
+                <Button
+                    android:layout_width="@dimen/historic_btn_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/historic_btn_date_start"
+                    android:id="@+id/historic_btn_date_start"
+                    android:layout_below="@id/historic_txt_title"/>
+
+                <Button
+                    android:layout_width="@dimen/historic_btn_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/historic_btn_date_end"
+                    android:id="@+id/historic_btn_date_end"
+                    android:layout_marginLeft="90dp"/>
+                
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/historic_btns_txt_layout"
+                android:layout_below="@id/historic_btns_layout"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="@dimen/historic_btn_width"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/historic_txt_date_start"
+                    android:text="HELLO"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/historic_btn_width"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/historic_txt_date_end"
+                    android:layout_marginLeft="90dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/historic_btns_txt_layout" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

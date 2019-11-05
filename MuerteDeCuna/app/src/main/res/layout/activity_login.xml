@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ActivityLogin"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     >
 
     <RelativeLayout
@@ -17,11 +17,12 @@
 
         <ImageView
             android:id="@+id/activity_login_lotalogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_above="@+id/activity_log_in_email"
             android:layout_centerInParent="true"
             android:layout_marginBottom="50dp"
+            android:background="@drawable/maternity"
             />
 
         <EditText
@@ -32,8 +33,7 @@
             android:background="#11000000"
             android:hint="Email"
             android:textColorHint="#FFFFFF"
-            android:textSize="16dp"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorGreen"/>
 
         <EditText
             android:id="@+id/activity_log_in_pass"
@@ -45,7 +45,7 @@
             android:hint="@string/log_in_password"
             android:textColorHint="#FFFFFF"
             android:inputType="textPassword"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorGreen"
             />
 
         <androidx.cardview.widget.CardView
@@ -62,7 +62,9 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark">
 
                 <TextView
                     android:id="@+id/activity_log_in_textView"
@@ -70,8 +72,9 @@
                     android:layout_height="wrap_content"
                     android:text="Iniciar Sesion"
                     android:layout_centerInParent="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/colorWhite"
                     android:textSize="18dp"
+
                     />
 
             </RelativeLayout>
@@ -100,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:text="Registrarse"
                     android:layout_centerInParent="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/colorWhite"
                     android:textSize="18dp"
                     />
 
