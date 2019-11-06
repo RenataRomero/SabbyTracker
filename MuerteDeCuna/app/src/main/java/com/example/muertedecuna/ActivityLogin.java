@@ -19,6 +19,7 @@ import com.facebook.AccessToken;
 public class ActivityLogin extends AppCompatActivity {
 
     private CardView card;
+    private CardView reg;
     private EditText email;
     private EditText pwd;
 
@@ -28,6 +29,7 @@ public class ActivityLogin extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         CardView logIn = findViewById(R.id.activity_login_logIn);
+        CardView register = findViewById(R.id.activity_login_logIn2);
 
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,14 +39,26 @@ public class ActivityLogin extends AppCompatActivity {
                 finish();
             }
         });
+
+        register.setOnClickListener( new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityLogin.this, ActivityRegister.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         email = findViewById(R.id.activity_log_in_email);
         pwd = findViewById(R.id.activity_log_in_pass);
         card = findViewById(R.id.activity_login_logIn);
+        reg = findViewById(R.id.activity_login_logIn2);
 
         email.setHintTextColor(getResources().getColor(R.color.colorGreen));
         pwd.setHintTextColor(getResources().getColor(R.color.colorGreen));
 
-        card.setOnClickListener(new View.OnClickListener() {
+        /*card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (email.getText().toString().equals("") || pwd.getText().toString().equals("") ) {
@@ -59,7 +73,7 @@ public class ActivityLogin extends AppCompatActivity {
                     finish();
                 }
             }
-        });
+        });*/
 
     }
 

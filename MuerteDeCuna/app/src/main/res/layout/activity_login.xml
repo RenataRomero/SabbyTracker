@@ -32,7 +32,7 @@
             android:layout_centerInParent="true"
             android:background="#11000000"
             android:hint="Email"
-            android:textColorHint="#FFFFFF"
+            android:textColorHint="@color/colorGreen"
             android:textColor="@color/colorGreen"/>
 
         <EditText
@@ -43,7 +43,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="38dp"
             android:hint="@string/log_in_password"
-            android:textColorHint="#FFFFFF"
+            android:textColorHint="@color/colorGreen"
             android:inputType="textPassword"
             android:textColor="@color/colorGreen"
             />
@@ -95,10 +95,12 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/activity_log_in_register"
+                >
 
                 <TextView
-                    android:id="@+id/activity_log_in_textView2"
+                    android:id="@+id/activity_log_in_txt_register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Registrarse"

@@ -10,145 +10,145 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="@dimen/metrics_txt_img_width"
-                    android:background="@drawable/thermometer"
-                    android:id="@+id/metrics_img_temperature"
-                    android:layout_marginTop="@dimen/metrics_img_top_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"/>
+            <ImageView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="@dimen/metrics_txt_img_width"
+                android:background="@drawable/thermometer"
+                android:id="@+id/metrics_img_temperature"
+                android:layout_marginTop="@dimen/metrics_img_top_margin"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/temperature"
-                    android:id="@+id/metrics_txt_temperature"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperature"
+                android:id="@+id/metrics_txt_temperature"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_below="@id/metrics_img_temperature"/>
 
-                <ImageView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="@dimen/metrics_txt_img_width"
-                    android:background="@drawable/pulse"
-                    android:id="@+id/metrics_img_pulse"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    />
+            <ImageView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="@dimen/metrics_txt_img_width"
+                android:background="@drawable/pulse"
+                android:id="@+id/metrics_img_pulse"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:layout_below="@id/metrics_txt_temperature"/>
 
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pulse"
-                    android:id="@+id/metrics_txt_pulse"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
+            <TextView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:text="@string/pulse"
+                android:id="@+id/metrics_txt_pulse"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_below="@id/metrics_img_pulse"
+                />
 
-                <ImageView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="@dimen/metrics_txt_img_width"
-                    android:background="@drawable/ear"
-                    android:id="@+id/metrics_img_ear"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    />
+            <ImageView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="@dimen/metrics_txt_img_width"
+                android:background="@drawable/ear"
+                android:id="@+id/metrics_img_ear"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:layout_below="@id/metrics_txt_pulse"
+                />
 
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sound"
-                    android:id="@+id/metrics_txt_ear"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
+            <TextView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:text="@string/sound"
+                android:id="@+id/metrics_txt_ear"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_below="@id/metrics_img_ear"/>
 
-                <ImageView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="@dimen/metrics_txt_img_width"
-                    android:background="@drawable/baby"
-                    android:id="@+id/metrics_img_movement"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    />
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/movement"
-                    android:id="@+id/metrics_txt_movement"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"/>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="@dimen/metrics_txt_img_width"
+                android:background="@drawable/baby"
+                android:id="@+id/metrics_img_movement"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:layout_below="@id/metrics_txt_ear"
+                />
+            <TextView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:text="@string/movement"
+                android:id="@+id/metrics_txt_movement"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_below="@id/metrics_img_movement"/>
 
 
+            <TextView
+                android:id="@+id/metrics_value_temperature"
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_toRightOf="@id/metrics_img_temperature"
+                android:layout_alignBottom="@id/metrics_img_temperature"
+                android:text="@string/metrics_value_temp"
+                android:textAlignment="center"
+                android:textSize="30dp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/temperature"
-                    android:id="@+id/metrics_value_temperature"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
+            <TextView
+                android:id="@+id/metrics_value_pulse"
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_toRightOf="@id/metrics_img_pulse"
+                android:text="@string/metrics_value_pulse"
+                android:textAlignment="center"
+                android:layout_alignBottom="@id/metrics_img_pulse"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:text="@string/metrics_value_sound"
+                android:id="@+id/metrics_value_ear"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_alignBottom="@id/metrics_img_ear"
+                android:layout_toRightOf="@id/metrics_img_ear"
+                android:textSize="20dp"/>
 
 
+            <TextView
+                android:layout_width="@dimen/metrics_txt_img_width"
+                android:layout_height="wrap_content"
+                android:text="@string/metrics_value_position"
+                android:id="@+id/metrics_value_movement"
+                android:layout_marginLeft="@dimen/metrics_left_margin"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/metrics_txt_top_margin"
+                android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
+                android:layout_toRightOf="@id/metrics_img_movement"
+                android:layout_alignBottom="@id/metrics_img_movement"
+                android:textSize="19dp"/>
 
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pulse"
-                    android:id="@+id/metrics_value_pulse"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
-
-                <
-
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sound"
-                    android:id="@+id/metrics_value_ear"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"/>
-
-
-                <TextView
-                    android:layout_width="@dimen/metrics_txt_img_width"
-                    android:layout_height="wrap_content"
-                    android:text="@string/movement"
-                    android:id="@+id/metrics_value_movement"
-                    android:layout_marginLeft="@dimen/metrics_left_margin"
-                    android:textAlignment="center"
-                    android:layout_marginTop="@dimen/metrics_txt_top_margin"
-                    android:layout_marginBottom="@dimen/metrics_txt_botton_margin"/>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </LinearLayout>
-
+        </RelativeLayout>
 
 
 

@@ -1,6 +1,7 @@
 package com.example.muertedecuna;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,11 +26,13 @@ import java.util.Calendar;
  * Use the {@link FragmentHistoric#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentHistoric extends Fragment implements DatePickerDialog.OnDateSetListener{
+public class FragmentHistoric extends Fragment{
 
 
     Button btnDateStart;
     Button btnDateEnd;
+    Button btnTimeStart;
+    Button btnTimeEnd;
     TextView txtDateStart;
     TextView txtDateEnd;
     DatePickerDialog dpEnd;
@@ -51,23 +54,49 @@ public class FragmentHistoric extends Fragment implements DatePickerDialog.OnDat
         txtDateStart = view.findViewById(R.id.historic_txt_date_start);
         txtDateEnd = view.findViewById(R.id.historic_txt_date_end);
 
+        btnTimeStart = view.findViewById(R.id.historic_btn_time_start);
+        btnTimeEnd = view.findViewById(R.id.historic_btn_time_end);
+
         btnDateStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DatePickerDialog dpStart = new DatePickerDialog(getActivity(), (DatePickerDialog.OnDateSetListener) getTargetFragment(), Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH),Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
-
                 dpStart.show();
             }
         });
+
+
+        btnDateEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatePickerDialog dpStart = new DatePickerDialog(getActivity(), (DatePickerDialog.OnDateSetListener) getTargetFragment(), Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH),Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+                dpStart.show();
+            }
+        });
+
+
+        btnTimeStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TimePickerDialog tpStart = new TimePickerDialog(getActivity(), (TimePickerDialog.OnTimeSetListener) getTargetFragment(), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE),true);
+
+                tpStart.show();
+            }
+        });
+
+        btnTimeEnd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TimePickerDialog tpStart = new TimePickerDialog(getActivity(), (TimePickerDialog.OnTimeSetListener) getTargetFragment(), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE),true);
+
+                tpStart.show();
+            }
+        });
+
 
         // Inflate the layout for this fragment
         return view;
     }
 
-    @Override
-    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        String date = "month/day/year: " + month + "/" + dayOfMonth + "/" + year;
-        Log.e("DATESTART",date);
-        txtDateStart.setText(date);
-    }
+
 }
