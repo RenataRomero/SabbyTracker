@@ -75,7 +75,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/activity_register_btn">
 
                 <TextView
                     android:id="@+id/activity_log_in_textView"

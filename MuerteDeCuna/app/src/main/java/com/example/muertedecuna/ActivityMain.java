@@ -1,5 +1,10 @@
 package com.example.muertedecuna;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -10,7 +15,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.example.muertedecuna.tools.Commons;
+import com.example.muertedecuna.tools.Constant;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 
 public class ActivityMain extends AppCompatActivity {
@@ -22,6 +29,18 @@ public class ActivityMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.e("FCMToken", "token "+ FirebaseInstanceId.getInstance().getToken());
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationManager mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            NotificationChannel mChannel = new NotificationChannel(Constant.CHANNEL_ID, Constant.CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
+            mChannel.setDescription(Constant.CHANNEL_DESCRIPTION);
+            mChannel.enableLights(true);
+            mChannel.setLightColor(Color.RED);
+            mChannel.enableVibration(true);
+
+            mNotificationManager.createNotificationChannel(mChannel);
+        }
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
@@ -89,8 +108,6 @@ public class ActivityMain extends AppCompatActivity {
                         return new FragmentHome();
                 case Commons.IDX_SECTION2:
                     return new FragmentMetrics();
-                case Commons.IDX_SECTION3:
-                    return new FragmentHistoric();
                 default:
                     return new FragmentHome();
             }
@@ -107,7 +124,6 @@ public class ActivityMain extends AppCompatActivity {
             switch (position){
                 case Commons.IDX_SECTION1: return getString(R.string.section1).toUpperCase();
                 case Commons.IDX_SECTION2: return getString(R.string.section2).toUpperCase();
-                case Commons.IDX_SECTION3: return getString(R.string.section3).toUpperCase();
             }
             return null;
         }
