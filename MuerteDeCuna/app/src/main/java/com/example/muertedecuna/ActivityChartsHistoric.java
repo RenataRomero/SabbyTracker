@@ -56,6 +56,18 @@ public class ActivityChartsHistoric extends AppCompatActivity {
 
         List<DataEntry> seriesData = new ArrayList<>();
 
+        for(List<JsonValues> list : data){
+
+            for(JsonValues value : list){
+
+
+                //if(){}
+
+
+            }
+
+            seriesData.add(new CustomDataEntry(, 3.6));
+        }
 
         seriesData.add(new CustomDataEntry("1986", 3.6));
         seriesData.add(new CustomDataEntry("1987", 7.1));
