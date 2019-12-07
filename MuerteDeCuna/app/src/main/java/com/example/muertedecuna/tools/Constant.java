@@ -15,4 +15,8 @@ public class Constant {
     public static final int FRAGMENT_HOW_TO = 2;
 
     public static final int ACTIVITY_DETAIL = 9999;
+
+    public static final String CHANNEL_ID = "my_channel_id";
+    public static final String CHANNEL_NAME = "my_channel_name";
+    public static final String CHANNEL_DESCRIPTION = "my_channel_description";
 }

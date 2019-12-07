@@ -9,10 +9,27 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityRegister"></activity>
+        <activity android:name=".charts.ActivityLineChart"></activity>
+        <activity android:name=".ActivityHistoricCharts" />
+
+        <service
+            android:name=".services.MessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ActivityHistoricSplashScreen" />
+        <activity android:name=".Chart" />
+        <activity android:name=".ActivityEndDate" />
+        <activity android:name=".ActivityCreateHistoric"></activity>
+        <activity android:name=".ActivityRegister" />
         <activity android:name=".ActivitySplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,15 +40,13 @@
         <activity
             android:name=".ActivityMain"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
             android:name=".ActivityLogin"
             android:configChanges="orientation"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

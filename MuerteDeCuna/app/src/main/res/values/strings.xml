@@ -32,8 +32,18 @@
     <string name="hello_blank_fragmentMetrics">Hello blank fragmentMediciones</string>
     <string name="hello_blank_fragmentHistorial">Hello blank fragmentHistorial</string>
 
+    <string name="metrics_value_temp">34°</string>
+    <string name="metrics_value_sound">Sin ruidos fuertes</string>
+    <string name="metrics_value_pulse">160 latidos/minuto</string>
+    <string name="metrics_value_position">Acostado boca arriba</string>
+
+    <string name="historic_next">Siguiente</string>
+    <string name="historic_get_info">Obtener informacion</string>
+    <string name="historic_btn_time_start">Hora de inicio</string>
+    <string name="historic_btn_time_end">Hora de termino</string>
+
     <string name="home_status_good">Tu bebe esta bien!</string>
     <string name="historic_btn_date_start">Fecha de inicio</string>
     <string name="historic_btn_date_end">Fecha de termino</string>
-    <string name="historic_txt_table_title">Selecciona de que fecha a que fecha te gustaria ver las mediciones de tu bebe.</string>
+    <string name="historic_txt_table_title">Selecciona de que fecha a que fecha y de que hora a que hora te gustaria ver las mediciones de tu bebe.</string>
 </resources>

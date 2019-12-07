@@ -6,20 +6,18 @@
     tools:context=".FragmentHome">
 
 
-
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="@dimen/home_img_size"
             android:layout_height="@dimen/home_img_size"
             android:background="@drawable/good"
             android:id="@+id/home_img_status"
+            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -28,8 +26,127 @@
             android:layout_below="@id/home_img_status"
             android:textSize="@dimen/home_txt_size"
             android:textAlignment="center"
-            android:id="@+id/home_txt_status"/>
+            android:id="@+id/home_txt_status"
+            />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_first_metrics"
+            android:orientation="horizontal"
+            android:layout_below="@id/home_txt_status"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/home_img_temp"
+                android:background="@drawable/thermometer"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/home_img_pulse"
+                android:background="@drawable/pulse"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_first_metrics_num"
+            android:layout_below="@id/home_first_metrics"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="39°"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:id="@+id/home_first_metrics_num_temp"/>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_first_metrics_num_pulse"
+                    android:textAlignment="center"
+                    android:text="160"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="latidos/minuto"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_second_metrics"
+            android:orientation="horizontal"
+            android:layout_below="@id/home_first_metrics_num"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/home_img_position"
+                android:background="@drawable/baby"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/home_img_sound"
+                android:background="@drawable/ear"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_second_metrics_num"
+            android:layout_below="@id/home_second_metrics"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Boca arriba"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:id="@+id/home_first_metrics_num_position"/>
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_first_metrics_num_sound"
+                android:textAlignment="center"
+                android:text="Sin sonidos fuertes"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCreateHistoric">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/historic_txt_info"
+            android:text="SELECCIONA LA FECHA INICIO"
+            android:textSize="20dp"
+            android:padding="5dp"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/historic_date_start"
+            android:layout_below="@id/historic_txt_info"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/historic_txt_date_start"
+            android:layout_below="@id/historic_date_start"
+            android:layout_marginLeft="60dp"
+            android:text="Fecha de inicio:"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/historic_btns"
+            android:layout_below="@id/historic_txt_date_start"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:text="Seleccionar \nFecha de Fin"
+                android:id="@+id/historic_btn_date_start"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historic_no_date_end"
+                android:text="Quiero solo \nesta fecha"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorGreen"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

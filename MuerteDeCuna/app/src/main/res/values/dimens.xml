@@ -8,9 +8,9 @@
     <dimen name="save_button">380dp</dimen>
 
     <dimen name="metrics_txt_botton_margin">20dp</dimen>
-    <dimen name="metrics_img_top_margin">30dp</dimen>
+    <dimen name="metrics_img_top_margin">20dp</dimen>
     <dimen name="metrics_left_margin">50dp</dimen>
-    <dimen name="metrics_txt_img_width">85dp</dimen>
+    <dimen name="metrics_txt_img_width">150dp</dimen>
     <dimen name="metrics_txt_top_margin">10dp</dimen>
 
     <dimen name="home_img_size">150dp</dimen>

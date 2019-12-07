@@ -17,11 +17,12 @@
 
         <ImageView
             android:id="@+id/activity_login_lotalogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_above="@+id/activity_log_in_email"
             android:layout_centerInParent="true"
             android:layout_marginBottom="50dp"
+            android:background="@drawable/family"
             />
 
         <EditText
@@ -31,9 +32,8 @@
             android:layout_centerInParent="true"
             android:background="#11000000"
             android:hint="Email"
-            android:textColorHint="#FFFFFF"
-            android:textSize="16dp"
-            android:textColor="@color/colorLightPurple"/>
+            android:textColorHint="@color/colorGreen"
+            android:textColor="@color/colorGreen"/>
 
         <EditText
             android:id="@+id/activity_log_in_pass"
@@ -43,16 +43,29 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="38dp"
             android:hint="@string/log_in_password"
-            android:textColorHint="#FFFFFF"
+            android:textColorHint="@color/colorGreen"
             android:inputType="textPassword"
-            android:textColor="@color/colorLightPurple"
+            android:textColor="@color/colorGreen"
             />
+        <EditText
+            android:id="@+id/activity_log_in_pass2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_log_in_pass"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="38dp"
+            android:hint="Confirmar contraseña"
+            android:textColorHint="@color/colorGreen"
+            android:inputType="textPassword"
+            android:textColor="@color/colorGreen"
+            />
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/activity_login_logIn"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_below="@id/activity_log_in_pass"
+            android:layout_below="@id/activity_log_in_pass2"
             android:layout_centerHorizontal="true"
             app:cardBackgroundColor="@color/colorPrimaryDark"
             app:cardCornerRadius="25dp"
@@ -62,7 +75,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/activity_register_btn">
 
                 <TextView
                     android:id="@+id/activity_log_in_textView"
