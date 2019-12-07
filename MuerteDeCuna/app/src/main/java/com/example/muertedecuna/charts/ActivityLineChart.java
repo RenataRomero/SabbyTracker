@@ -90,12 +90,8 @@ public class ActivityLineChart extends AppCompatActivity {
     public void getVariables(){
 
         JsonFilters filters = new JsonFilters(dd,mm, yy);
-
         Log.e("TYPE",filters.toString());
-
-
         Call<ArrayList<ArrayList<JsonValues>>> call = jsonPlaceHolderApi.getValues(filters);
-
 
         switch (type){
             case "temp":

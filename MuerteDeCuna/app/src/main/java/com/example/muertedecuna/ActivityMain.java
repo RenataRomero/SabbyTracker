@@ -92,10 +92,7 @@ public class ActivityMain extends AppCompatActivity {
             switch (position){
                 case Commons.IDX_SECTION1:
                     if(getIntent().getExtras() != null) {
-                        Bundle bundle = new Bundle();
-                        bundle.putParcelable("ITEM", getIntent().getParcelableExtra("ITEM"));
                         Fragment fragment = new FragmentHome();
-                        fragment.setArguments(bundle);
                         return fragment;
                     } else
                         return new FragmentHome();

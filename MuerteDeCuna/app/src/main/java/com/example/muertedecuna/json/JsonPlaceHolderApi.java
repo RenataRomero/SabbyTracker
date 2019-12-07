@@ -43,18 +43,6 @@ public interface JsonPlaceHolderApi {
     Call<ArrayList<ArrayList<JsonValues>>>getValuesPositionX(@Body JsonFilters jf);
 
     @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
-    @POST("data/read/position-y")
-    Call<ArrayList<ArrayList<JsonValues>>>getValuesPositionY(@Body JsonFilters jf);
-
-    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
     @POST("data/read")
     Call<ArrayList<ArrayList<JsonValues>>>getValues(@Body JsonFilters jf);
-
-    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
-    @GET("data/read/temp")
-    Call<JsonValues>getCurrentTemp();
-
-    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
-    @GET("data/read/pulse")
-    Call<JsonValues>getCurrentPulse();
 }
