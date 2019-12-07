@@ -59,7 +59,7 @@ public class FragmentMetrics extends Fragment {
 
                 intent.putExtras(typeBundle);
                 startActivity(intent);
-                getActivity().finish();
+                //getActivity().finish();
             }
         });
 
@@ -72,7 +72,7 @@ public class FragmentMetrics extends Fragment {
 
                 intent.putExtras(typeBundle);
                 startActivity(intent);
-                getActivity().finish();
+                //getActivity().finish();
             }
         });
 
@@ -85,7 +85,7 @@ public class FragmentMetrics extends Fragment {
 
                 intent.putExtras(typeBundle);
                 startActivity(intent);
-                getActivity().finish();
+               //getActivity().finish();
             }
         });
 
@@ -98,7 +98,7 @@ public class FragmentMetrics extends Fragment {
 
                 intent.putExtras(typeBundle);
                 startActivity(intent);
-                getActivity().finish();
+                //getActivity().finish();
             }
         });
 

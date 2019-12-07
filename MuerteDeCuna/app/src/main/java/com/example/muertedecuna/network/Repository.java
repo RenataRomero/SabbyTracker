@@ -44,7 +44,7 @@ public class Repository {
         // show it
         pd.show();
 
-        api.createUser(user).enqueue(new Callback<JsonUser>() {
+        /*api.createUser(user).enqueue(new Callback<JsonUser>() {
             @Override
             public void onResponse(Call<JsonUser> call,
                                    Response<JsonUser> response) {
@@ -57,7 +57,7 @@ public class Repository {
             public void onFailure(Call<JsonUser> call, Throwable t) {
                 api.setValue(null);
             }
-        });
+        });*/
         return newsData;
     }
 }

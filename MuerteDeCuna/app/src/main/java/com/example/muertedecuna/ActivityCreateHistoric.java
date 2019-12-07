@@ -97,9 +97,8 @@ public class ActivityCreateHistoric extends AppCompatActivity {
                 Intent intent = new Intent(ActivityCreateHistoric.this, ActivityEndDate.class);
 
                 intent.putExtras(mBundle);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
-
 
             }
         });

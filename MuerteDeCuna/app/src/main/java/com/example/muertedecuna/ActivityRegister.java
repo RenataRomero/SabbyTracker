@@ -3,7 +3,9 @@ package com.example.muertedecuna;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -84,7 +86,7 @@ public class ActivityRegister extends AppCompatActivity {
 
                     Snackbar.make(v, "Por favor, inserte una contraseña.", Snackbar.LENGTH_LONG).show();
                 }else{
-                    createPost();
+                    createPost(v);
                 }
 
             }
@@ -92,7 +94,7 @@ public class ActivityRegister extends AppCompatActivity {
 
     }
 
-    private void createPost() {
+    private void createPost(final View v) {
         Post post = new Post(email.getText().toString(),password.getText().toString());
 
         Log.e("POST",post.toString());
@@ -117,6 +119,11 @@ public class ActivityRegister extends AppCompatActivity {
                 //Post postResponse = response.body();
                 //Log.e("POST",postResponse.getTitle());
                 progressDialog.dismiss();
+
+                Intent intent = new Intent(ActivityRegister.this, ActivityLogin.class);
+                startActivity(intent);
+                Snackbar.make(v, "Usuario Registrado correctamente!", Snackbar.LENGTH_LONG).show();
+                finish();
 
             }
 

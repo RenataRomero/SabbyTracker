@@ -27,6 +27,34 @@ public interface JsonPlaceHolderApi {
     Call<JsonLogin>authUser(@Body Post post);
 
     @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @POST("data/read/temp")
+    Call<ArrayList<ArrayList<JsonValues>>>getValuesTemp(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @POST("data/read/sound")
+    Call<ArrayList<ArrayList<JsonValues>>>getValuesSound(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @POST("data/read/pulse")
+    Call<ArrayList<ArrayList<JsonValues>>>getValuesPulse(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @POST("data/read/position-x")
+    Call<ArrayList<ArrayList<JsonValues>>>getValuesPositionX(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @POST("data/read/position-y")
+    Call<ArrayList<ArrayList<JsonValues>>>getValuesPositionY(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
     @POST("data/read")
     Call<ArrayList<ArrayList<JsonValues>>>getValues(@Body JsonFilters jf);
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @GET("data/read/temp")
+    Call<JsonValues>getCurrentTemp();
+
+    @Headers("x-api-key: BhPMOkeApxa0UKb6kcvId5iNBPmVSGLZ93dzunmN")
+    @GET("data/read/pulse")
+    Call<JsonValues>getCurrentPulse();
 }

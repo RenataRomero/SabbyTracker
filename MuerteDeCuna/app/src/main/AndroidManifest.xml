@@ -13,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".charts.ActivityLineChart"></activity>
+        <activity android:name=".ActivityHistoricCharts" />
+
         <service
             android:name=".services.MessagingService"
             android:enabled="true"
@@ -23,9 +26,9 @@
         </service>
 
         <activity android:name=".ActivityHistoricSplashScreen" />
-        <activity android:name=".ActivityChartsHistoric" />
+        <activity android:name=".Chart" />
         <activity android:name=".ActivityEndDate" />
-        <activity android:name=".ActivityCreateHistoric" />
+        <activity android:name=".ActivityCreateHistoric"></activity>
         <activity android:name=".ActivityRegister" />
         <activity android:name=".ActivitySplashScreen">
             <intent-filter>
@@ -37,7 +40,9 @@
         <activity
             android:name=".ActivityMain"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity
             android:name=".ActivityLogin"
             android:configChanges="orientation"

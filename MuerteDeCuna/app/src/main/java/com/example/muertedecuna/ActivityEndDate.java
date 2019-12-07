@@ -75,7 +75,7 @@ public class ActivityEndDate extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivityEndDate.this, ActivityHistoricSplashScreen.class);
+                Intent intent = new Intent(ActivityEndDate.this, ActivityHistoricCharts.class);
 
                 Bundle endBundle = new Bundle();
                 endBundle.putString("startDay", currentDay);
@@ -87,8 +87,8 @@ public class ActivityEndDate extends AppCompatActivity {
                 endBundle.putString("type", type);
 
                 intent.putExtras(endBundle);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                finish();
             }
         });
     }
